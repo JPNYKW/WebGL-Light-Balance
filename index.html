@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>WebGL - Light Balance</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <canvas id="webgl-canvas"></canvas>
+        <div class="status">
+            <h1>scene settings</h1>
+            <div class="line"></div>
+
+            <h1>near fog</h1>
+            <input type="range" min="0" max="100" id="near-fog"/>
+
+            <h1>far fog</h1>
+            <input type="range" min="100" max="1500" id="far-fog"/>
+
+            <div class="enter-line"></div>
+
+            <h1>object settings</h1>
+            <div class="line"></div>
+
+            <h1>scale x</h1>
+            <input type="range" min="0" max="10" value="1" step="0.1" id="scale-x"/>
+
+            <h1>scale y</h1>
+            <input type="range" min="0" max="10" value="1.5" step="0.1" id="scale-y"/>
+
+            <h1>scale z</h1>
+            <input type="range" min="0" max="10" value="1" step="0.1" id="scale-z"/>
+
+            <div class="enter-line"></div>
+
+            <h1>position x</h1>
+            <input type="range" min="-100" max="100" value="1" step="0.1" id="position-x"/>
+
+            <h1>position y</h1>
+            <input type="range" min="-100" max="100" value="14" step="0.1" id="position-y"/>
+
+            <h1>position z</h1>
+            <input type="range" min="-100" max="100" value="1" step="0.1" id="position-z"/>
+        </div>
+
+        <div class="footer"><i class="fab fa-github"></i> <a href="https://github.com/JPNYKW">GitHub</a></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
